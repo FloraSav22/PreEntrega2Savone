@@ -3,7 +3,7 @@
     src: url(../fonts/Montserrat-Regular.ttf);
 }
 
-* { 
+* {
     margin: 0;
     padding: 0;
     background-color: none;
@@ -12,7 +12,7 @@
 /* INICIO DE LA WEB */
 
 ul {
-    background-color: #033076;
+    padding-left: unset;
 }
 
 li, a {
@@ -22,9 +22,6 @@ li, a {
     color: white;
     text-decoration: none;
     list-style-type: none;
-    background-color: #0844a4;
-    border-color: #033076;
-    display: inline;
 }
 
 header {
@@ -50,6 +47,7 @@ header  nav {
 
 .nav__links {
     list-style: none;
+    display: flex;
     justify-content: space-evenly;
     align-items: center;
     background-color: #0844a4;
@@ -61,8 +59,9 @@ header  nav {
     padding: 4px;
     border-color: #033076;
     width: 100%;
-    border-right: 4px solid #033076;
+    border: 4px solid #033076;
 }
+
 
 
 /* .overlay-texto h1{
@@ -138,13 +137,18 @@ header  nav {
     margin-bottom: 75px;
 }
 
+
+
+
+/* --mini-noticia-- */
+
 .feedNoticia {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
 
-.feedNoticia .miniNoticia{              
+.feedNoticia .miniNoticia{
     width: 300px;
     height: 300px;
     background-color: fuchsia;
@@ -177,7 +181,7 @@ header  nav {
 }
 
 .miniNoticia p{
-    margin: 50px 40px;                    
+    margin: 50px 40px;
     font-family: 'Montserrat', sans-serif;
     font-size: 22px;
     font-weight: 900;
@@ -185,113 +189,9 @@ header  nav {
     text-align: center;
 }
 
-/* FIN INICIO DE WEB */
+/* --fin-mini-noticia-- */
 
-footer {
-    background-color: rgb(0, 144, 188);
-    font-family: 'Poppins', sans-serif;
-    font-size: 14px;
-    width: 100%;
-    bottom: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-
-/*CONTACTO*/
-#sobreNosotros{
-    padding: 50px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 40px;
-    font-weight: 900;
-}
-
-main section h2{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 28px;
-    font-weight: 800;
-    text-align: center;
-    padding-top: 80px;
-}
-
-main section p{
-    font-family: 'Poppins', sans-serif;                   /*ARREGLAR EL FORM*/
-    font-size: 24px;
-    font-weight: 400;
-    text-align: center;
-    margin-left: 20%;
-    margin-right: 20%;
-}
-
-div .formularioContacto {
-    display: block;
-    text-align: center;
-}
-
-.formularioContacto {
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px 0px;
-    text-align: left;
-}
-
-/* section form input{
-    
-} */
-
-
-
-/*NOTICIAS*/
-
-.Noticias article {
-    font-size: 16px;
-    margin-top: 25px;
-    margin-bottom: auto;
-    margin-left: 60px;
-    margin-right: 150px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-    width: 100%;
-}
-
-.Noticias article h2{
-    font-size: 36px;
-    margin-right: 1800px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 900;
-}
-
-.Noticias article p{
-    color: red;
-    font-size: 24px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 300;
-    display: inline-block;
-    width: 100%;
-    margin-top: 10px;
-    margin-right: 1000px;
-}
-
-.Noticias img:first-of-type {
-    background-image: url(../resources/Europa.jpg);
-    background-size: cover;
-    justify-items: center;
-    width: 833px;
-    height: 433px;
-    margin: auto;
-}
-
-.Noticias img:nth-of-type(2) {
-    background-image: url(../resources/earth.jpg);
-    display: flex;
-    background-size: cover;
-    justify-content: center;
-    width: 833px;
-    height: 433px;
-    margin: auto;
-}
+/* ----catalogo DEL inicio---- */
 
 .inicio_catalogo {
     margin-top: 50px;
@@ -335,24 +235,259 @@ div .formularioContacto {
 }
 
 
-------CATALOGO------
+/* FIN INICIO DE WEB */
 
-.grid__planetas {
-    list-style: none;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 3em;
+
+
+
+
+/* -----FOOTER----- */
+
+footer {
+    background-color: rgb(0, 144, 188);
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-.inicio__planetas img{
+/* -----FIN FOOTER----- */
+
+/*CONTACTO*/
+#sobreNosotros{
+    padding: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+main section h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    font-weight: 800;
+    text-align: center;
+    padding-top: 80px;
+}
+
+main section p{
+    font-family: 'Poppins', sans-serif;                   /*ARREGLAR EL FORM*/
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+div .formularioContacto {
+    display: block;
+    text-align: center;
+}
+
+.formularioContacto {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 0px;
+    text-align: left;
+}
+
+/* section form input{
+
+} */
+
+
+
+/*NOTICIAS*/
+
+.Noticias article {
+    font-size: 16px;
+    margin-top: 25px;
+    margin-bottom: auto;
+    margin-left: 60px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    width: 100%;
+}
+
+.Noticias article h2{
+    text-align: left;
+    font-size: 36px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+
+.Noticias p{
+    color: red;
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    text-align: left;
+    padding-top: 10px;
+}
+
+.noticia__link {
+    font-size: 10px;
+    color: rgb(67, 123, 255);
+    
+}
+
+.Noticias img:first-of-type {
+    background-image: url(../resources/Europa.jpg);
+    background-size: cover;
+    justify-items: center;
+    width: 833px;
+    height: 433px;
+    margin: auto;
+}
+
+.Noticias img:nth-of-type(2) {
+    background-image: url(../resources/earth.jpg);
+    background-size: cover;
+    justify-content: center;
+    width: 833px;
+    height: 433px;
+    margin: auto;
+}
+
+
+
+
+
+/* ------CATALOGO------ */
+
+
+
+img{
     max-width: 100%;
-    height: 200px;
 }
 
-.bk-blue {
-    background-color: lightskyblue;
-    height: 100vh;
+.gallery img {
+    background-color: black;
+    padding: 4px;
+    /* border-bottom: 20px solid fuchsia; */
+    width: 100%;
+    height: auto;
 }
+
+.gallery {
+    background-color: rgb(216, 216, 216);
+    padding: 80px 0;
+    margin: 5px;
+}
+
+.descripcion {
+    font-family: 'Montserrat';
+    color: black;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+    border: 4px solid black;
+    border-top: 0px;
+}
+
+
+
+/* ------FIN CATALOGO------ */
+
+
+
+
+
+/* -----WIKI del PLANETA----- */
+
+.lista_1_planeta {
+    
+    margin-top: 50px;
+    border: none;
+    
+}
+
+.lista_1_planeta li {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: black;
+}
+
+.lista_2_planeta li {
+    color: black;
+    text-align: center;
+}
+
+.wiki{  
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+}
+
+.wiki_titulo {
+    font-family: 'Montserrat';
+    font-weight: ;
+}
+
+.seccion_wiki ul {
+    border: 2px solid black;
+    display: inline-block;
+    justify-content: ;
+}
+
+.seccion_wiki li {
+    text-align: unset;
+}
+
+.lista_1_planeta ul {
+    border: 2px solid black;
+}
+.lista_1_planeta li {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -361,39 +496,90 @@ div .formularioContacto {
 
 
 /*MEDIA QUERY - MOBILE */
+
+
+
+
+
+
+
+
+
 @media (min-width:375px) and (max-width:576px){ /*and (orientation:portrait/landscape) */
-  
+
     header {
         background: url('./resources/BannerEjemplo.png');
         position: relative;
         display: flex;
         flex-direction: column;
         width: 100%;
+        height: 136px;
     }
-    
+
     header img {
         width: 100%;
-        height: auto;
+        height: 136px;
         object-fit: cover;
         margin-right: auto;
     }
-    
+
     header  nav {
-        display: none;
+        position: absolute;
+        width: 100%;
+        top: 105px;
+        left: 0;
     }
-    
-    .nav__links {
-        display: none;
-    }
-    
+
     .nav__links li {
-        display: none;
+        padding: unset;
+        font-weight: 300;
+        font-size: 14px;
+        border: 2px solid #033076;
     }
+
+    /* header nav ul li{
+        width: 100%;
+    }
+    
+    header nav ul li:hover
+    {
+        background-color: greenyellow;
+    }
+
+    .menuMobile{
+        position: relative;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menuMobile::before{
+        content: '';
+        position: relative;
+        width: 100%;
+        height: 3px;
+        background: white;
+        transform: translateY(-12px);
+        box-shadow: 0 12 white;
+    }
+
+    .menuMobile::after{
+        content: '';
+        position: relative;
+        width: 100%;
+        height: 3px;
+        background: white;
+        transform: translateY(-12px);
+    } */
+
 
     .noticiasImportante h2{
         font-size: 22px;
     }
-    
+
     .noticiasImportante {
         height: auto;
         width: auto;
@@ -403,7 +589,7 @@ div .formularioContacto {
         margin-left: auto;
         margin-right: auto;
     }
-    
+
     .noticiasImportante p {
         font-family: 'Poppins', sans-serif;
         font-size: 16px;
@@ -412,7 +598,7 @@ div .formularioContacto {
         height: auto;
         width: auto;
     }
-    
+
     .noticiasImportante button a{
         background-color: white;
         color: fuchsia;
@@ -427,7 +613,7 @@ div .formularioContacto {
         outline: none;
         text-decoration: none;
     }
-    
+
     #cajaNoticiaImagen {
         background-image: url(../resources/pexels-felix-mittermeier-956999.jpg);
         background-size: cover;
@@ -445,26 +631,28 @@ div .formularioContacto {
     .div_titulo_ultimasnoticias {
         font-family: 'Poppins', sans-serif;
         font-size: 26px;
-        margin-top: 60px;
+        margin-top: 50px;
+        margin-bottom: 40px;
     }
-    
+
     .feedNoticia {
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-    
-    .feedNoticia .miniNoticia{            
+
+    .miniNoticia{
         width: 300px;
         height: 300px;
         justify-content: center;
+        margin: 1rem;
     }
-    
+
     .miniNoticia h2 {
         font-size: 22px;
         margin: 25px 16px;
     }
-    
+
     .miniNoticia:first-of-type {
         background-image: url(../resources/Mars.jpg);
         justify-content: center;
@@ -472,7 +660,7 @@ div .formularioContacto {
         margin-left: auto;
         margin-right: auto;
     }
-    
+
     .miniNoticia:nth-of-type(2) {
         background-image: url(../resources/perseverance.jpg);
         background-position: center;
@@ -480,8 +668,8 @@ div .formularioContacto {
         margin-left: auto;
         margin-right: auto;
     }
-    
-    
+
+
     .miniNoticia:last-of-type {
         background-image: url(../resources/SpaceX.jpg);
         background-position: center;
@@ -489,9 +677,9 @@ div .formularioContacto {
         margin-left: auto;
         margin-right: auto;
     }
-    
+
     .miniNoticia p{
-        margin: 35px 24px;                    
+        margin: 35px 24px;
         font-family: 'Montserrat', sans-serif;
         font-size: 20px;
         font-weight: 900;
@@ -502,9 +690,9 @@ div .formularioContacto {
     /* -----FIN apartado ULTIMAS NOTICIAS----- */
 
 
-    
+
     /* -----Catalogo INICIO----- */
-   
+
     .inicio__planetas {
         list-style: none;
         display: flex;
@@ -513,30 +701,30 @@ div .formularioContacto {
         background-color: white;
         height: auto;
     }
-    
+
     .inicio__planetas li {
         border: 2px solid black;
     }
-    
+
     .inicio__planetas h3 {
         text-align: center;
     }
-    
+
     .inicio__planetas img{
         max-width: 100%;
         height: auto;
     }
-    
-    
+
+
     /* -----FIN Catalogo INICIO----- */
 
-   
-   
-   
+
+
+
     body {
         /* overflow: hidden; */
     }
-    
+
     /*CONTACTO*/
     #sobreNosotros{
     padding: 12px;
@@ -591,8 +779,8 @@ textarea {
     margin-top: 5px;
     width: 90%;
 }
-    
-    
+
+/* -----FOOTER----- */
 
     footer {
         flex-direction: column;
@@ -608,7 +796,21 @@ textarea {
     background-color: #0844a4;
     border-color: #033076;
 }
-}
+
+/* -----FIN FOOTER----- */
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -663,7 +865,7 @@ textarea {
 
 /*MEDIA QUERY - TABLET PEQUEÑA/VERTICAL (parada))*/
 @media (min-width: 580px) and (max-width:1020px){
-   
+
     header {
         background: url('./resources/BannerEjemplo.png');
         position: relative;
@@ -671,22 +873,22 @@ textarea {
         flex-direction: column;
         width: 100%;
     }
-    
+
     header img {
         width: 100%;
         height: auto;
         object-fit: cover;
         margin-right: auto;
     }
-    
+
     header  nav {
         display: none;
     }
-    
+
     .nav__links {
         display: none;
     }
-    
+
     .nav__links li {
         display: none;
     }
@@ -694,7 +896,7 @@ textarea {
     .noticiasImportante h2{
         font-size: 22px;
     }
-    
+
     .noticiasImportante {
         height: auto;
         display: flex;
@@ -704,7 +906,7 @@ textarea {
         margin-left: unset;
         margin-right: unset;
     }
-    
+
     .noticiasImportante p {
         font-family: 'Poppins', sans-serif;
         font-size: 16px;
@@ -713,7 +915,7 @@ textarea {
         height: auto;
         width: auto;
     }
-    
+
     .noticiasImportante button a{
         background-color: white;
         color: fuchsia;
@@ -728,7 +930,7 @@ textarea {
         outline: none;
         text-decoration: none;
     }
-    
+
     #cajaNoticiaImagen {
         background-image: url(../resources/pexels-felix-mittermeier-956999.jpg);
         background-size: cover;
@@ -748,43 +950,46 @@ textarea {
         font-size: 26px;
         margin-top: 60px;
     }
-    
+
     .feedNoticia {
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-    
-    .feedNoticia .miniNoticia{
-        padding: 25px;              
+
+    .miniNoticia{
+        padding: 25px;
         width: 300px;
         height: 300px;
         justify-content: center;
+        margin: 1rem;
     }
-    
+
+    .miniNoticia
+
     .miniNoticia h2 {
         font-size: 20px;
         margin-top: 25px;
     }
-    
+
     .miniNoticia:first-of-type {
         background-image: url(../resources/Mars.jpg);
         justify-content: center;
     }
-    
+
     .miniNoticia:nth-of-type(2) {
         background-image: url(../resources/perseverance.jpg);
         background-position: center;
     }
-    
-    
+
+
     .miniNoticia:last-of-type {
         background-image: url(../resources/SpaceX.jpg);
         background-position: center;
     }
-    
+
     .miniNoticia p{
-        margin: 50px 40px;                    
+        margin: 50px 40px;
         font-family: 'Montserrat', sans-serif;
         font-size: 22px;
         font-weight: 900;
@@ -795,9 +1000,9 @@ textarea {
     /* -----FIN apartado ULTIMAS NOTICIAS----- */
 
 
-    
+
     /* -----Catalogo INICIO----- */
-   
+
     .inicio__planetas {
         list-style: none;
         display: grid;
@@ -806,22 +1011,22 @@ textarea {
         background-color: white;
         height: auto;
     }
-    
+
     .inicio__planetas li {
         border: 2px solid black;
         height: auto;
     }
-    
+
     .inicio__planetas h3 {
         text-align: center;
         height: auto;
     }
-    
+
     .inicio__planetas img{
         max-width: 100%;
         height: auto;
     }
-   
+
     /*CONTACTO*/
 
     #sobreNosotros{
@@ -830,7 +1035,7 @@ textarea {
     font-weight: 900;
 }
 
-main section h2{
+main .contacto h2{
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     font-weight: 800;
@@ -838,7 +1043,7 @@ main section h2{
     padding-top: 80px;
 }
 
-main section p{
+main .contacto p{
     font-family: 'Poppins', sans-serif;                   /*ARREGLAR EL FORM*/
     font-size: 24px;
     font-weight: 400;
@@ -870,7 +1075,7 @@ div .formularioContacto {
 
 
 
-    
+
     footer {
         background-color: fuchsia;
     }
@@ -889,3 +1094,4 @@ div .formularioContacto {
         background-color: red;
     }
 }
+    
