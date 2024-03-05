@@ -226,7 +226,7 @@ header  nav {
 .inicio__planetas li {
     border: 3px solid black;
     background-color: white;
-    width: 100%;
+    width: 100%;    
 }
 
 .inicio__planetas h3 {
@@ -374,7 +374,7 @@ img{
 }
 
 .gallery {
-    background-color: rgb(216, 216, 216);
+    background-color: rgb(220, 220, 220);
     padding: 80px 0;
     margin: 5px;
 }
@@ -399,56 +399,81 @@ img{
 
 /* -----WIKI del PLANETA----- */
 
-.lista_1_planeta {
-    
-    margin-top: 50px;
-    border: none;
-    
-}
-
-.lista_1_planeta li {
-    font-family: 'Poppins', sans-serif;
-    font-size: 14px;
-    color: black;
-}
-
-.lista_2_planeta li {
-    color: black;
-    text-align: center;
-}
-
-.wiki{  
+.wiki{
+    margin: 15px 10px 0px 10px;  
     border: 2px solid black;
+    /* display: flex;
+    justify-content: center; */
+    background-color: lightblue;
+}
+
+.wiki_titulo {
     display: flex;
     justify-content: center;
 }
 
-.wiki_titulo {
+.wiki_titulo h1 {
     font-family: 'Montserrat';
-    font-weight: ;
+    background-color: aqua;
+    border: 6px solid black;
+    position: relative;
+    top: 70px;
+    left: 240px;
 }
 
-.seccion_wiki ul {
-    border: 2px solid black;
+.wiki_datos {
+    background-color: salmon;
     display: inline-block;
-    justify-content: ;
+    justify-content: center;
 }
 
-.seccion_wiki li {
-    text-align: unset;
+.wiki_datos ul {
+
 }
 
-.lista_1_planeta ul {
-    border: 2px solid black;
-}
-.lista_1_planeta li {
+.wiki_datos_2 {
+    background-color: #033076;
+    display: inline-block;
     text-align: center;
 }
 
 
+.wiki div img {
 
+}
 
+.wiki_imagenDefault {
+    width: 25%;
+    height: auto;
+    position: relative;
+    left: 100px;
+}
 
+.wiki_descripcion {
+    border: 2px solid black;
+    background-color: violet;
+}
+
+.wiki_descripcion h4 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.wiki_descripcion p {
+    font-size: 18px;
+    text-align: center;
+}
+
+div #recomendados {
+    margin-top: 40px;
+    margin-bottom: 60px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.hola {
+    padding: 0px 300px 50px 300px;
+}
 
 
 
@@ -807,7 +832,9 @@ textarea {
 
 
 
-
+.hola {
+    padding: unset;
+}
 
 
 
@@ -1069,7 +1096,9 @@ div .formularioContacto {
 
 
 
-
+.hola {
+    padding: unset;
+}
 
 
 
@@ -1095,4 +1124,3 @@ div .formularioContacto {
         background-color: red;
     }
 }
-    
