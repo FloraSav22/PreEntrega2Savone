@@ -1,0 +1,91 @@
+#sobreNosotros{
+    padding: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+    @include media-query-mobile(){
+        padding: 12px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 24px;
+        font-weight: 900;
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+main section h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    font-weight: 800;
+    text-align: center;
+    padding-top: 80px;
+    @include media-query-mobile(){
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        font-weight: 800;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 5px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+main section p{
+    font-family: 'Poppins', sans-serif;                   /*ARREGLAR EL FORM*/
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    @include media-query-mobile(){
+        font-family: 'Poppins', sans-serif;                   /*ARREGLAR EL FORM*/
+        font-size: 16px;
+        font-weight: 400;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+div .formularioContacto {
+    display: block;
+    text-align: center;
+    
+}
+
+.formularioContacto {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 0px;
+    text-align: left;
+    @include media-query-mobile(){
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 20px 0px;
+        text-align: left;
+    }
+}
+
+input {
+    padding: 5px;
+    margin-bottom: 5px;
+    width: 50%;
+@include media-query-mobile{
+    padding: 3px;
+    margin: 3px;
+    width: 90%;
+}
+}
+
+textarea {
+    margin-top: 5px;
+    width: 50%;
+    @include media-query-mobile(){
+        margin-top: 5px;
+        width: 90%;
+    }
+}

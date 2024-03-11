@@ -1,0 +1,26 @@
+//GENERAL
+@import './general/reset.scss';
+
+//Layout
+@import './layout/header.scss';
+@import './layout/footer.scss';
+
+//Paginas
+@import './paginas/index.scss';
+@import './paginas/noticias.scss';
+@import './paginas/catalogo.scss';
+@import './paginas/wiki_planeta.scss';
+@import './paginas/instruments.scss';
+@import './paginas/contacto.scss';
+
+
+//Sub-Paginas CATALOGO
+
+
+//Sub-Paginas INSTRUMENTACION
+
+
+
+//Sub-Paginas NOTICIAS
+@import './paginas/noticias/rumbo-a-europa.scss';
+@import './paginas/noticias/exoplanetas-porque-importan.scss';

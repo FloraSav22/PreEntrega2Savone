@@ -1,0 +1,101 @@
+@mixin media-query-mobile {
+    @media (max-width: 576px) {
+        @content;
+    }
+}
+
+.Noticias article {
+    font-size: 16px;
+    margin-top: 25px;
+    margin-bottom: auto;
+    margin-left: 60px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    width: 100%;
+    @include media-query-mobile(){
+    margin-top: 16px;
+    margin-left: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    width: 100%;
+    }
+    h2{
+    text-align: left;
+    font-size: 36px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    @include media-query-mobile(){
+    text-align: left;
+    font-size: 36px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    }
+}
+}
+
+.Noticias p{
+    color: black;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    text-align: left;
+    margin-top: 10px;
+    width: 80%;
+    @include media-query-mobile();
+    color: black;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    text-align: left;
+    margin-top: 10px;
+    width: 90%;
+}
+
+.noticia_link{
+    @include media-query-mobile(){
+    margin-bottom: 30px;
+    }
+}
+
+
+.noticia_link p i {
+    font-weight: 900;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    a {
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ff008c;
+    margin-left: 5px;
+    @include media-query-mobile(){
+    font-size: 14px;
+    text-decoration: none;
+    color: #ff008c;
+    margin-left: 5px;
+    }
+}
+}
+
+.Noticias img:first-of-type {
+    background-image: url(../resources/Europa.jpg);
+    background-size: cover;
+    justify-items: center;
+    width: 833px;
+    height: 433px;
+    margin: auto;
+    
+    @include media-query-mobile(){
+    width: 416.5px;
+    height: 216.5px;
+    }
+}
+
+.Noticias img:nth-of-type(2) {
+    background-image: url(../resources/earth.jpg);
+    background-size: cover;
+    justify-content: center;
+    width: 833px;
+    height: 433px;
+    margin: auto;
+}

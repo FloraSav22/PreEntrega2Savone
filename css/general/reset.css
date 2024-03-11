@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "Poppins";
+  src: url(../fonts/Montserrat-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  background-color: none;
+}
+
+/*# sourceMappingURL=reset.css.map */

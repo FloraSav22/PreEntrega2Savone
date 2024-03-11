@@ -1,0 +1,46 @@
+.Noticias article {
+  font-size: 16px;
+  margin-top: 25px;
+  margin-bottom: auto;
+  margin-left: 60px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+.Noticias article h2 {
+  text-align: left;
+  font-size: 36px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+}
+.Noticias article h2 p {
+  color: red;
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  text-align: left;
+  padding-top: 10px;
+}
+
+.noticia__link {
+  font-size: 10px;
+  color: rgb(67, 123, 255);
+}
+
+.Noticias img:first-of-type {
+  background-image: url(../../resources/Europa.jpg);
+  background-size: cover;
+  justify-items: center;
+  width: 833px;
+  height: 433px;
+  margin: auto;
+}
+.Noticias img:first-of-type:nth-of-type(2) {
+  background-image: url(../../resources/earth.jpg);
+  background-size: cover;
+  justify-content: center;
+  width: 833px;
+  height: 433px;
+  margin: auto;
+}
+
+/*# sourceMappingURL=noticias.css.map */

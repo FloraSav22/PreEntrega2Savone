@@ -1,0 +1,169 @@
+ul {
+  padding-left: unset;
+}
+ul li, ul a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: white;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #0844a4;
+  text-align: center;
+}
+.nav__links li {
+  justify-content: space-evenly;
+  padding: 4px;
+  border-color: #033076;
+  width: 100%;
+  border: 4px solid #033076;
+}
+
+/*-----MINI-SECCION NOTICIAS*/
+.noticiasImportante {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: white;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.noticiasImportante p {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 10px;
+  height: auto;
+  width: auto;
+  color: white;
+  text-align: center;
+}
+.noticiasImportante button a {
+  background-color: white;
+  color: fuchsia;
+  font-family: "AR One Sans";
+  font-size: 14px;
+  font-weight: 600;
+  border: 1px solid black;
+  border-radius: 1em;
+  padding: 0.5em 1em;
+  margin: 0.25em;
+  border: none;
+  outline: none;
+  text-decoration: none;
+}
+.noticiasImportante button a:hover {
+  background: rgba(221, 221, 221, 0.8666666667);
+}
+
+#cajaNoticiaImagen {
+  background-image: url(../resources/pexels-felix-mittermeier-956999.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  height: auto;
+  width: 100%;
+  border: 0px;
+  margin-top: 120px;
+}
+
+.div_titulo_ultimasnoticias {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 75px;
+}
+
+/* --mini-noticia-- */
+.feedNoticia {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.feedNoticia .miniNoticia {
+  width: 300px;
+  height: 300px;
+  background-color: fuchsia;
+}
+.feedNoticia .miniNoticia h2 {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 26px;
+  margin-top: 25px;
+  text-align: center;
+}
+.feedNoticia .miniNoticia h2:first-of-type {
+  background-image: url(./resources/Mars.jpg);
+  background-size: cover;
+}
+.feedNoticia .miniNoticia h2:first-of-type:nth-of-type(2) {
+  background-image: url(./resources/perseverance.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.feedNoticia .miniNoticia h2:first-of-type:nth-of-type(2):last-of-type {
+  background-image: url(../resources/SpaceX.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.feedNoticia .miniNoticia h2:first-of-type:nth-of-type(2):last-of-type p {
+  margin: 50px 40px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  font-weight: 900;
+  color: white;
+  text-align: center;
+}
+
+/* --fin-mini-noticia-- */
+/* ----catalogo DEL inicio---- */
+.inicio_catalogo {
+  margin-top: 50px;
+  margin-bottom: 15px;
+}
+.inicio_catalogo h1 {
+  font-family: "Poppins";
+  font-size: 34px;
+  font-weight: 900;
+  text-align: center;
+}
+.inicio_catalogo h1 p {
+  font-family: "AR One Sans";
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.inicio__planetas {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  grid-gap: 3em;
+  background-color: white;
+  height: auto;
+}
+.inicio__planetas li {
+  border: 3px solid black;
+  background-color: white;
+  width: 100%;
+}
+.inicio__planetas h3 {
+  text-align: center;
+  color: black;
+  background-color: white;
+}
+
+/*# sourceMappingURL=index.css.map */
