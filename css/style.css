@@ -185,6 +185,15 @@ border-radius: 30px;
     text-align: center;
 }
 
+.miniNoticia p{
+    margin: 50px 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    font-weight: 900;
+    color: white;
+    text-align: center;
+}
+
 .miniNoticia:first-of-type {
     background-image: url(../resources/Mars.jpg);
     background-size: cover;
@@ -203,14 +212,6 @@ border-radius: 30px;
     background-position: center;
 }
 
-.miniNoticia p{
-    margin: 50px 40px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 22px;
-    font-weight: 900;
-    color: white;
-    text-align: center;
-}
 
 /* --fin-mini-noticia-- */
 
