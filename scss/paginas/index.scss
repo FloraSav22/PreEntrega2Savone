@@ -1,5 +1,5 @@
 @mixin media-query-mobile {
-    @media (max-width: 576px) {
+    @media (min-width: 375px) and (max-width: 576px) {
         @content;
     }
 }
@@ -140,6 +140,25 @@ ul {
         }
 }
 
+.btn_index {
+    box-sizing: border-box;
+    padding: 8px 24px;
+    margin-bottom: 15px;
+    color: #ff008c;
+    background: white;
+    border: 0;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 30px;
+}
+    .btn_index:hover{
+        background: #ff008c;
+        color: white;
+    }
+
+
+
 .div_titulo_ultimasnoticias {
     font-family: 'Poppins', sans-serif;
     font-weight: 900;
@@ -166,7 +185,7 @@ ul {
     .miniNoticia{
     width: 300px;
     height: 300px;
-    background-color: fuchsia;
+    background-color: rgb(0, 255, 21);
     @include media-query-mobile(){
     justify-content: center;
     margin: 1rem;
@@ -184,6 +203,17 @@ ul {
             @include media-query-mobile(){
             font-size: 30px;
             }
+            p{
+                margin: 50px 40px;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 22px;
+                font-weight: 900;
+                color: white;
+                text-align: center;
+                @include media-query-mobile(){
+                margin: 35px 24px;
+                font-size: 20px;
+                }
 
                 &:first-of-type {
                 background-image: url(../../resources/Mars.jpg);
@@ -215,24 +245,15 @@ ul {
                             margin-right: auto;
                         }
 
-                                p{
-                                margin: 50px 40px;
-                                font-family: 'Montserrat', sans-serif;
-                                font-size: 22px;
-                                font-weight: 900;
-                                color: white;
-                                text-align: center;
-                                @include media-query-mobile(){
-                                margin: 35px 24px;
-                                font-size: 20px;
-                                }
+
                                 }
                             }
                         }
                     }
-                }
-            }
-        }
+                 }
+    }
+}
+
 
 /* --fin-mini-noticia-- */
 

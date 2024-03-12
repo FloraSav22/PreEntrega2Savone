@@ -59,6 +59,8 @@
         .lista_clipper{
             font-size: 18px;
             font-weight: 600;
+            @include media-query-mobile(){
+                margin-bottom: 60px;
         }
         p {
         font-family: 'Poppins', sans-serif;
@@ -72,6 +74,7 @@
         width: 100%;
         text-align: center;
         }
+}
 }
 }
 

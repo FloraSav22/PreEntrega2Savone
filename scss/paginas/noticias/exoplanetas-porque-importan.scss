@@ -8,14 +8,18 @@
     display: flex;
     justify-content: center;
     margin: 50px;
+    width: 100%;
     @include media-query-mobile(){
     height: auto;
+    margin-left: auto;
+    margin-right: auto;
     }
     
         h1 {
         font-family: 'Montserrat', sans-serif;
         text-align: center;
         font-size: 48px;
+
         
         @include media-query-mobile(){
         font-size: 36px;
@@ -55,6 +59,8 @@
     margin: 50px;
     @include media-query-mobile(){
     width: 100%;
+    margin-left: 10px;
+    margin-right: auto;
     }
         p {
         font-family: 'Poppins', sans-serif;
@@ -62,11 +68,11 @@
         text-align: left;
         line-height: 32px;
         margin-bottom: 30px;
+        margin-left: auto;
         
         @include media-query-mobile(){
         font-size: 16px;
         width: 100%;
-        text-align: center;
         }
 }
 }

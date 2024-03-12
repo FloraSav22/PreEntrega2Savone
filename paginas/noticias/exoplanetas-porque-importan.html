@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link href="https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400;600&family=Poppins:ital,wght@0,400;0,600;1,100&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./resources/logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../../css/main.css">
     <title>Qué son los Exoplanetas | ATLAS Universal</title>
 </head>
@@ -37,26 +38,53 @@
     </form>
 
     <div class="noticia_titulo"><h1>Qué Son los Exoplanetas y Porqué Importan</h1></div>
-    <div class="noticia_imagen"><img src="../../resources/milkyway.jpg" alt="que son los Exoplanetas"></div>
+    
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../../resources/noticias/fila-exo.webp" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../../resources/noticias/exoplaneta.webp" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../../resources/noticias/5000-nasa.webp" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
     <div class="noticia_parrafo"><p>Los exoplanetas se han convertido en uno de los objetos más fascinantes de la astronomía moderna. 
         Desde el primer hallazgo confirmado de un exoplaneta alrededor de una estrella similar al Sol en 1995, se han detectado más de 4000 exoplanetas,
         de los cuales unos 3000 han sido confirmados por distintos métodos. Estos métodos se basan en el efecto que el planeta produce sobre la estrella que orbita, 
-        ya sea por el cambio de velocidad radial, el tránsito, la microlente gravitacional o la astrometría.</p> <br>
+        ya sea por el cambio de velocidad radial, el tránsito, la microlente gravitacional o la astrometría.</p>
 
         <p>El método más utilizado es el de los tránsitos, que consiste en medir la disminución del brillo de la estrella cuando el planeta pasa por delante de ella. 
         Este método permite determinar el tamaño del planeta y, combinado con el de las velocidades radiales, que mide el movimiento de la estrella debido a la atracción gravitatoria del planeta, 
-        permite estimar la masa y la densidad del planeta. Con estos datos se puede inferir la composición y la estructura del planeta, así como su temperatura y su atmósfera.</p> <br>
+        permite estimar la masa y la densidad del planeta. Con estos datos se puede inferir la composición y la estructura del planeta, así como su temperatura y su atmósfera.</p>
 
         <p>Los exoplanetas presentan una gran diversidad de tamaños, masas, órbitas y características físicas. Algunos son gigantes gaseosos, como Júpiter o Saturno, otros son rocosos, como la Tierra o Marte, 
         y otros son helados, como Urano o Neptuno. Algunos orbitan muy cerca de su estrella, otros muy lejos, y otros en zonas intermedias. Algunos tienen órbitas circulares, otros elípticas, y otros inclinadas. 
-        Algunos tienen un solo sol, otros dos o más, y otros ninguno. Algunos tienen lunas, anillos o campos magnéticos, y otros no.</p> <br>
+        Algunos tienen un solo sol, otros dos o más, y otros ninguno. Algunos tienen lunas, anillos o campos magnéticos, y otros no.</p>
 
         <p>Los exoplanetas son importantes por varias razones. En primer lugar, nos permiten conocer mejor nuestro propio sistema solar, al compararlo con otros sistemas planetarios. 
         Podemos aprender sobre los procesos de formación y evolución de los planetas, así como sobre las condiciones que favorecen o dificultan la existencia de vida. En segundo lugar, 
         nos permiten explorar la diversidad y la complejidad de los mundos que hay en el universo, y descubrir fenómenos sorprendentes e inesperados. Podemos encontrar planetas con características únicas, 
         como los que tienen océanos de lava, atmósferas de metal, nubes de rubíes o diamantes, o vientos supersónicos. En tercer lugar, nos permiten buscar y detectar signos de vida en otros planetas, 
         lo que sería uno de los mayores descubrimientos de la historia de la humanidad. Podemos buscar indicadores de habitabilidad, como la presencia de agua líquida, 
-        la estabilidad climática o la protección contra la radiación, y también indicadores de biología, como la presencia de oxígeno, metano o clorofila en la atmósfera.</p> <br>
+        la estabilidad climática o la protección contra la radiación, y también indicadores de biología, como la presencia de oxígeno, metano o clorofila en la atmósfera.</p>
 
         <p>La búsqueda de exoplanetas es una de las áreas más activas y prometedoras de la astronomía actual. Cada año se descubren nuevos exoplanetas, 
         se mejoran las técnicas de observación y se desarrollan nuevos instrumentos y misiones espaciales. Algunos de los proyectos más relevantes son el telescopio espacial Kepler, 
