@@ -18,7 +18,7 @@
 <body>
     <header>
         <a href="../index.html">
-        <img src="../resources/BannerEjemplo.png" alt="banner"></a>
+        <img src="../resources/banner.webp" alt="banner"></a>
         <nav>
             <ul class="nav__links">
                 <li><a href="../index.html">Inicio</a></li>
@@ -28,7 +28,30 @@
                 <li><a href="../paginas/contact.html">Contacto</a></li>
             </ul>
         </nav>
+        
+        <button class="burger">
+            <div class="bar"></div>
+        </button>
+        
+        </div>
     </header>
+
+
+    <nav class="mobile_nav">
+
+    <a href="../index.html">Inicio</a>
+    <a href="../paginas/news.html">Noticias</a>
+    <a href="../paginas/catalog.html">Catalogo</a>
+    <a href="../paginas/instruments.html">Instrumentacion</a>
+    <a href="../paginas/contact.html">Contacto</a>
+
+    </nav>
+
+        <div class="container"></div>
+
+        <div class="row">
+            <div class="col"></div>
+        </div>
     
     <form>
         <div class="search">
@@ -76,7 +99,7 @@
     
     <section class="gallery min-vh-100">
         <div class="containter-lg">
-            <div class="row gy-4 row-cols-2 row-cols-sm-3 row-cols-md-4">
+            <div class="row gy-4 row-cols-2 row-cols-md-3 row-cols-xl-4">
                 
                 <div class="col">
                 <a href="#">
@@ -121,7 +144,7 @@
                 </div>
                     
                 <div class="col">
-                    <a href="#">
+                    <a href="./catalogoInstrumentos/celestron-astrofi910mm.html">
                     <img src="../resources/Instrumentacion/celestronAstrofi910mm.webp" class="gallery-item" alt="gallery">
                     <div class="descripcion">Celestron AstroFi 910mm</div>
                 </a>
@@ -171,6 +194,8 @@
         <p>Todos los Derechos Reservados</p>
         <p>Creado por VS</p>
     </footer>
+
+    <script src="../js/main.js"></script>
     <script>
         function filterGallery() {
             var selectedCategory = document.getElementById("filterCategory").value;

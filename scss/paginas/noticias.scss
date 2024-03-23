@@ -1,47 +1,67 @@
 @mixin media-query-mobile {
-    @media (max-width: 576px) {
+    @media (min-width: 320px) and (max-width: 480px) {
         @content;
     }
+}
+
+@mixin media-query-tablet {
+    @media (min-width: 768px) and (max-width: 1023px) {
+        @content;
+    }
+}
+
+article{
+    width: 100%;
 }
 
 .Noticias article {
     font-size: 16px;
     margin-top: 25px;
     margin-bottom: auto;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    width: auto;
+    h1{
     margin-left: 60px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-    width: 100%;
     @include media-query-mobile(){
-    margin-top: 16px;
-    margin-left: 10px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-    width: 100%;
+        text-align: center;
+        margin-left: unset;
+    }
+    @include media-query-tablet(){
+        text-align: center;
+        font-size: 26px;
+    }
     }
     h2{
     text-align: left;
     font-size: 36px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
+    margin-left: 60px;
     @include media-query-mobile(){
-    text-align: left;
+    margin-left: unset;
+    margin-top: 15px;
+    text-align: center;
     font-size: 36px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
     }
-}
-}
-
-.Noticias p{
+    @include media-query-tablet(){
+        text-align: center;
+        font-size: 38px;
+        margin-top: 30px;
+    }
+    }   
+    p{
     color: black;
     font-size: 18px;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     text-align: left;
     margin-top: 10px;
+    margin-left: 60px;
     width: 80%;
-    @include media-query-mobile();
+    @include media-query-mobile(){
     color: black;
     font-size: 18px;
     font-family: 'Poppins', sans-serif;
@@ -49,6 +69,15 @@
     text-align: left;
     margin-top: 10px;
     width: 90%;
+    margin-left: 10px;
+    }
+    @include media-query-tablet(){
+        font-size: 22px;
+        text-align: left;
+        margin-left: 10px;
+        width: auto;
+    }
+    }
 }
 
 .noticia_link{
@@ -83,11 +112,18 @@
     justify-items: center;
     width: 833px;
     height: 433px;
-    margin: auto;
+    margin-left: 60px;
     
     @include media-query-mobile(){
     width: 416.5px;
     height: 216.5px;
+    margin-left: unset;
+    }
+
+    @include media-query-tablet(){
+        width: 100%;
+        height: 340px;
+        margin-left: unset;
     }
 }
 

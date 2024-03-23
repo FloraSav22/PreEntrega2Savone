@@ -1,5 +1,5 @@
 @mixin media-query-mobile {
-    @media (max-width: 576px) {
+    @media (min-width: 320px) and (max-width: 480px) {
         @content;
     }
 }
@@ -8,7 +8,6 @@
     display: flex;
     justify-content: center;
     margin: 50px;
-    width: 100%;
     @include media-query-mobile(){
     height: auto;
     margin-left: auto;

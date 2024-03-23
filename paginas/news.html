@@ -7,6 +7,7 @@
     reportaje, tecnologia, ciencia, mundo, historia, titulares, titulos, actualidad">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link href="https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400;600&family=Poppins:ital,wght@0,400;0,600;1,100&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./resources/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/main.css">
@@ -15,7 +16,7 @@
 <body>
     <header>
         <a href="../index.html">
-        <img src="../resources/BannerEjemplo.png" alt="banner"></a>
+        <img src="../resources/banner.webp" alt="banner"></a>
         <nav>
             <ul class="nav__links">
                 <li><a href="../index.html">Inicio</a></li>
@@ -25,7 +26,29 @@
                 <li><a href="../paginas/contact.html">Contacto</a></li>
             </ul>
         </nav>
+        <button class="burger">
+            <div class="bar"></div>
+        </button>
+        </div>
     </header>
+
+
+    <nav class="mobile_nav">
+
+    <a href="../index.html">Inicio</a>
+    <a href="../paginas/news.html">Noticias</a>
+    <a href="../paginas/catalog.html">Catalogo</a>
+    <a href="../paginas/instruments.html">Instrumentacion</a>
+    <a href="../paginas/contact.html">Contacto</a>
+
+    </nav>
+
+    <form>
+        <div class="search">
+            <span class="search-icon material-symbols-outlined">search</span>
+            <input class="search_input" type="search" placeholder="Buscar">
+        </div>
+    </form>
 
         <div class="container"></div>
 
@@ -36,15 +59,15 @@
             <section class="Noticias">
                 <article><h1><i>NOTICIAS DE LA SEMANA</i></h1>
                     
-                    <div class="noticias_titulo"><h2>Rumbo a Europa</h2><br></div>
-                    <div><a href="../paginas/noticias/rumbo-a-europa.html"><img src="../resources/Europa.jpg" alt="Europa Luna de Jupiter"></a></div>
+                    <div><h2>Rumbo a Europa</h2><br></div>
+                    <div><a href="../paginas/noticias/rumbo-a-europa.html"><img src="../resources/europaclipper.webp" alt="Europa Luna de Jupiter"></a></div>
                     <div><p>CLIPPER es un proyecto que tiene como objetivo explorar Europa, una de las más grandes y misteriosas de Júpiter. 
                         Europa posee un océano de agua líquida bajo su superficie helada, lo que la convierte en un posible lugar para albergar vida extraterrestre.</p></div>
 
                     <div class="noticia_link"><p><i>fuente:<a href="www.nasa.gov">www.nasa.gov</a></i></p></div>
                     
                     <div><h2>Biodiversidad</h2><br></div>
-                    <div><a href="#"><img src="../resources/earth.jpg" alt="Biodiversidad de la Tierra"></a></div>
+                    <div><a href="#"><img src="../resources/biodiversity.webp" alt="Biodiversidad de la Tierra"></a></div>
                     <div><p>La biodiversidad de la Tierra es la riqueza de formas de vida que habitan en sus diferentes ecosistemas. 
                         Desde las bacterias más simples hasta los animales más complejos, pasando por las plantas, los hongos y los protozoos.
                          todas las especies contribuyen a mantener el equilibrio y el funcionamiento nuesrta Biosfera.</p></div>
@@ -61,6 +84,8 @@
             <p>Creado por VS</p>
         </footer>
 
+
+        <script src="../js/main.js"></script>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

@@ -6,6 +6,7 @@
     <meta name="keywords" content="sobre nosotros, contacto, contactenos, about, about us, email, form, correo">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link href="https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400;600&family=Poppins:ital,wght@0,400;0,600;1,100&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./resources/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/main.css">
@@ -14,7 +15,7 @@
 <body>
     <header>
         <a href="../index.html">
-        <img src="../resources/BannerEjemplo.png" alt="banner"></a>
+        <img src="../resources/banner.webp" alt="banner"></a>
         <nav>
             <ul class="nav__links">
                 <li><a href="../index.html">Inicio</a></li>
@@ -24,14 +25,43 @@
                 <li><a href="../paginas/contact.html">Contacto</a></li>
             </ul>
         </nav>
+        
+        <button class="burger">
+            <div class="bar"></div>
+        </button>
+        </div>
     </header>
+
+
+    <nav class="mobile_nav">
+
+    <a href="../index.html">Inicio</a>
+    <a href="../paginas/news.html">Noticias</a>
+    <a href="../paginas/catalog.html">Catalogo</a>
+    <a href="../paginas/instruments.html">Instrumentacion</a>
+    <a href="../paginas/contact.html">Contacto</a>
+
+    </nav>
+
+    <form>
+        <div class="search">
+            <span class="search-icon material-symbols-outlined">search</span>
+            <input class="search_input" type="search" placeholder="Buscar">
+        </div>
+    </form>
+
+
         <main>
                 <section class="contacto">
                     <h2 id="main__sobreNosotros">Sobre Nosotros</h2>
                     <h2>¿Quienes Somos?</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam sia. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam</p>
+                    <p>Soy una persona aficionada a la Astronomia y la Cienca quien con mucho tiempo libre decidio crear un Catalogo de facil acceso para que todo el mundo pueda saber 
+                        los ultimos avances de la ciencia y descubrimientos Exoplanetarios.
+                    </p>
                     <h2>¿Como empezo el Proyecto ATLAS?</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam sia. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam</p>
+                    <p>El Proyecto ATLAS comenzó como una idea de crear el catalogo más amplio de planetas y estrellas para el dominio publico, asimismo, gracias al curso de desarrollo web en CoderHouse pude aprender
+                        a usar las herramientas que brinda Html, Css, Bootstrap y demás para poder crear el Sitio que estás viendo.
+                    </p>
                     <h2>¿Tienes más Preguntas?</h2>
                     <p>Si tienes mas preguntas o solo te gustaria entrar en contacto con nosotros, porfavor, escribanos un correo a: <b>ATLASuniversal2024@gmail.com</b>
                         o bien, usando el formulario de más abajo.</p>
@@ -49,5 +79,8 @@
                 <p>Todos los Derechos Reservados</p>
                 <p>Creado por Valentino Savone</p>
             </footer>
+            
+        <script src="../js/main.js"></script>
+
     </body>
 </html>
