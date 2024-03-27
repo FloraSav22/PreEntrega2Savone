@@ -21,7 +21,9 @@
     justify-content: center;
     margin-left: auto;
     @include media-query-mobile(){
-        display: none;
+        margin-top: 30px;
+        width: unset;
+        justify-content: flex-end;
     }
     @include media-query-tablet(){
         height: 60px;
@@ -41,6 +43,11 @@
     border-radius: 30px;
     margin-bottom: 10px;
     color: white;
+    @include media-query-mobile(){
+        margin: 4px 12px;
+        margin-bottom: 60px;
+        font-size: 12px;
+    }
 }
 
 .btn:hover{
@@ -64,13 +71,18 @@
     border: 3px solid black;
     p {
     font-weight: 800;
+    @include media-query-mobile(){
+        font-size: 14px;
+    }
     }
     h2 {
     box-sizing: border-box;
     font-size: 36px;
-
     margin: 20px 0 10px;
+    @include media-query-mobile(){
+        font-size: 20px;
     }
+}
     button {
     box-sizing: border-box;
     width: 100%;
@@ -93,6 +105,13 @@
     visibility: visible;
     transform: translate(-50%,-50%) scale(1);
     z-index: 999;
+    @include media-query-mobile(){
+        width: 90%;
+        padding: 5px;
+    }
+    @include media-query-tablet(){
+        width: 80%;
+    }
 }
 
 .wiki {
@@ -102,7 +121,7 @@
     display: flex;
     flex-direction: column;
     @include media-query-mobile(){
-        margin: 0px 5px 0px 5px;
+        margin: -25px 5px 0px 5px;
         border: 1px solid black;
         border-radius: 10px;
     }
@@ -347,6 +366,13 @@ div #recomendados {
     margin-bottom: 60px;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
+    @include media-query-mobile(){
+        margin-bottom: 20px;
+    }
+    @include media-query-tablet(){
+        margin-top: 60px;
+        margin-bottom: 30px;
+    }
 }
 
 .lista_recomendada {
@@ -354,7 +380,9 @@ div #recomendados {
     @include media-query-mobile(){
         padding: unset;
     }
-
+    @include media-query-tablet(){
+        padding: unset;
+    }
 }
 
 .lista_recomendada .g-4, .gy-4{

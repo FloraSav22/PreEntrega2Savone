@@ -11,6 +11,11 @@
     }
 }
 
+@mixin flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
 @mixin miniNoticia{
     justify-content: center;
     display: inline-block;
@@ -139,15 +144,18 @@ nav {
 }
 
 .frase {
-    display: flex;
-    flex-direction: row;
+    @include flex-row();
+    padding-top: 15px;
     margin-top: 20px;
+    background-color: greenyellow;
     margin-bottom: -40px;
     margin-left: auto;
     margin-right: auto;
-    background-image: a;
     width: 20%;
     border-radius: 12px;
+    @include media-query-mobile(){
+        width: 100%;
+    }
 }
 
 .frase p {
@@ -316,8 +324,7 @@ nav {
 /* --mini-noticia-- */
 
 .feedNoticia {
-    display: flex;
-    flex-direction: row;
+    @include flex-row();
     justify-content: space-evenly;
     @include media-query-mobile(){
     flex-direction: column;
@@ -413,8 +420,7 @@ nav {
 
 .inicio__planetas {
     list-style: none;
-    display: flex;
-    flex-direction: row;
+    @include flex-row();
     justify-content: space-evenly;
     grid-gap: 3em;
     background-color: white;
